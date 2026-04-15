@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+<title>Geometry Rush</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div id="gameWrapper">
+  <div id="hud">
+    <div id="levelDisplay">LEVEL 1</div>
+    <div id="scoreDisplay">SCORE: 0</div>
+    <div id="livesDisplay">❤️ 3</div>
+  </div>
+  <div id="progressBar"><div id="progressFill" style="width:0%"></div></div>
+
+  <div id="canvasContainer">
+    <canvas id="gameCanvas"></canvas>
+
+    <div id="overlay">
+      <div class="overlay-title" id="overlayTitle" style="background: linear-gradient(135deg,#00ffcc,#ff00aa); -webkit-background-clip:text; -webkit-text-fill-color:transparent;">GEOMETRY RUSH</div>
+      <div class="overlay-sub" id="overlaySub">Tap, click, or press SPACE to jump over obstacles!<br>Survive as long as possible and level up!</div>
+      <div>
+        <button class="btn btn-primary" id="startBtn">▶ PLAY</button>
+      </div>
+    </div>
+
+    <div id="levelUpOverlay">
+      <div class="levelup-text" id="levelUpText" style="color:#ffd700">LEVEL UP!</div>
+    </div>
+  </div>
+
+  <div id="controls">
+    <button class="ctrl-btn" id="jumpBtn">▲</button>
+  </div>
+  <div id="hint">SPACE / CLICK / TAP to jump &nbsp;|&nbsp; Double jump available!</div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
